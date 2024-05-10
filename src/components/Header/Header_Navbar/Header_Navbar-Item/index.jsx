@@ -12,8 +12,9 @@ export default function NavbarItem({
     <li key={index} className="Header_Navbar-item">
       {img ? <img src={img} alt="Ảnh lỗi" /> : ''}
       <Link to={link} className="Header_Navbar-item-name">
-        {name}
+        {name} 
       </Link>
+      <h2>Hello</h2>
     </li>
   );
 }
