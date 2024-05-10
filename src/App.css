@@ -1,0 +1,14 @@
+:root {
+  --primary-color: rgb(201, 32, 39);
+  --font-size: 16px;
+  --primary-text: black;
+}
+
+.App {
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

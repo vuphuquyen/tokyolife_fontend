@@ -1,0 +1,86 @@
+.Page_Body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .Page_Body-shirt {
+    width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .Page_Body-Two {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-top: 30px;
+    position: relative;
+
+    .Page_Body-Two-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      position: absolute;
+
+      // transition: transform 0.5s ease;
+    }
+    .Page_body-show {
+      position: relative;
+      animation: slideAnimation 0.3s ease;
+      margin: 0;
+      padding: 0;
+    }
+    @keyframes slideAnimation {
+      0% {
+        top: 0;
+        left: 25%;
+      }
+      100% {
+        top: 0;
+        left: 0;
+      }
+    }
+    .Page_body-showBack {
+      position: relative;
+      animation: slideAnimationShowBack 0.3s ease;
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes slideAnimationShowBack {
+      0% {
+        top: 0;
+        left: -25%;
+      }
+      100% {
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .Page_Body-Two-button {
+      padding: 10px;
+      position: absolute;
+    }
+    .Page_Body-Two-button-back {
+      left: 0;
+      top: 40%;
+      z-index: 3;
+    }
+    .Page_Body-Two-button-next {
+      right: 0;
+      top: 40%;
+    }
+  }
+}

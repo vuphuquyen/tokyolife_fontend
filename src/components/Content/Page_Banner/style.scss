@@ -1,0 +1,40 @@
+.Header_Banner {
+  width: 1200px;
+  height: auto;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .Header_Banner-Wrapper {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    padding: 10px;
+    gap: 3px;
+
+    .Header-Banner-img {
+      width: 1100px;
+      height: 510px;
+      object-fit: cover;
+      box-sizing: border-box;
+    }
+
+    .Header_Banner-button {
+      padding: 10px 15px;
+      border-radius: 2px;
+      font-size: 25px;
+      border: none;
+      background-color: rgb(146, 146, 140);
+      display: none;
+    }
+
+    &:hover .Header_Banner-button {
+      display: block;
+    }
+  }
+}

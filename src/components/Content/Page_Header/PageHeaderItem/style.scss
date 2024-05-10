@@ -1,0 +1,45 @@
+.Page_Header-Wrapper {
+  width: 16%;
+  margin-right: 10px;
+  border-radius: 40px;
+  background-color: rgb(254, 226, 226);
+  margin-top: 20px;
+  .Page_Header-Item {
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: 5px;
+    text-decoration: none;
+
+    .Page_Header-Item-image {
+      border: none;
+      width: 73px;
+      height: 73px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    p {
+      font-size: 16px;
+      color: rgb(51, 51, 51);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-sizing: border-box;
+      font-weight: 500;
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .Page_Header-Item-img {
+      width: 37px;
+      height: 37px;
+      object-fit: cover;
+      border-radius: 60%;
+      position: absolute;
+      top: -8px;
+      right: -7px;
+    }
+  }
+}

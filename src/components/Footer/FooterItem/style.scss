@@ -1,0 +1,18 @@
+.FooterItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 23%;
+  h3 {
+    padding-bottom: 10px;
+  }
+  p {
+    margin: 0px;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    color: rgb(0, 0, 0);
+  }
+}

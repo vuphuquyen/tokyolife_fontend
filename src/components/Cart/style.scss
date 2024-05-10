@@ -1,0 +1,183 @@
+.Cart_Wrapper {
+  width: 100%;
+
+  .Cart_body {
+    width: 100%;
+    background-color: rgb(245, 245, 245) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .Cart_body-top {
+      width: 1200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 16px;
+      padding-left: 16px;
+      margin: 50px 0px;
+
+      .Cart_body-top-wrapper {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+
+          .span_color {
+            color: red;
+            font-weight: 700;
+          }
+          span {
+            font-size: 20px;
+            color: rgb(153, 153, 153);
+            text-transform: uppercase;
+          }
+        }
+        .border-hyphen {
+          color: rgb(153, 153, 153);
+        }
+      }
+    }
+
+    .Cart_body-content {
+      width: 1200px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 10px;
+
+      .Cart_body-content-left {
+        flex-basis: 66.6667%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .Cart_body-content-left-voucher {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 16px 20px;
+          background: rgb(255, 251, 235);
+          margin-bottom: 8px;
+          border-radius: 4px;
+
+          div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+
+            span {
+              margin: 0;
+              padding: 0;
+              color: rgb(228, 12, 19);
+              font-weight: 700;
+            }
+          }
+        }
+        .Cart_body-content-left-tow {
+          display: flex;
+          align-items: center;
+          padding: 16px 20px;
+          gap: 5px;
+          background-color: rgb(255, 255, 255);
+          border-radius: 4px;
+
+          span {
+            line-height: 1.5;
+            text-transform: none;
+            font-family: SVN-poppins, sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            color: rgb(201, 33, 39);
+          }
+        }
+
+        .Cart_body-content-left-product {
+          width: 100%;
+          table {
+            width: 100%;
+
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            padding: 16px 20px;
+
+            tbody {
+              .Cart_Noproduct {
+                th {
+                  padding-top: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .Cart_body-content-right {
+        flex-basis: 33.3333%;
+        padding: 30px 20px;
+        background-color: rgb(255, 255, 255);
+
+        h2 {
+          margin: 0px;
+          line-height: 1.5;
+          text-transform: none;
+          font-family: SVN-poppins, sans-serif;
+          font-weight: 700;
+          font-size: 20px;
+          color: rgb(34, 34, 34);
+        }
+
+        .Cart_body-content-right-total {
+          border-bottom: 1px dashed rgb(153, 153, 153);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 16px;
+          margin: 24px 0px 0px;
+
+          .Cart_body-content-right-total-tow {
+            font-family: SVN-poppins, sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: rgb(201, 33, 39);
+          }
+        }
+
+        .Cart_body-content-right-pay {
+          background-color: rgb(201, 33, 39);
+          color: rgb(255, 255, 255);
+          margin-top: 20px;
+          padding: 10px 15px;
+          border-radius: 5px;
+          font-size: 18px;
+        }
+
+        p {
+          margin-top: 5px;
+          line-height: 1.5;
+          text-transform: none;
+          font-family: SVN-poppins, sans-serif;
+          font-weight: 400;
+          font-size: 13px;
+          color: rgb(51, 51, 51);
+
+          span {
+            color: rgb(201, 33, 39);
+          }
+        }
+      }
+    }
+  }
+}
