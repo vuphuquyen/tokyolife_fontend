@@ -14,7 +14,6 @@ export default function NavbarItem({
       <Link to={link} className="Header_Navbar-item-name">
         {name} 
       </Link>
-      <h2>Hello</h2>
     </li>
   );
 }
