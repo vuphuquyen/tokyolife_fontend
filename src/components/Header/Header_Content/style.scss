@@ -173,6 +173,53 @@
               }
             }
           }
+          .User_childOne {
+            width: 100%;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgb(159, 152, 152);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            padding-left: 20px;
+            
+            span {
+              font-size: 20px;
+              font-weight: 600;
+            }
+            i {
+               font-size: 35px;
+            }
+          }
+          .User_childTwo {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 25px;
+            padding-left: 20px;
+
+            .User_ChildTwo-box {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              gap: 20px;
+
+              span {
+                font-size: 20px;
+                
+              }
+              i {
+                font-size: 25px;
+             }
+             .LogOut {
+                color: red;
+             }
+            }
+          }
         }
       }
     }

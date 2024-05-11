@@ -3,27 +3,25 @@ import Button from '../../../assets/button';
 import Input from '../../../assets/input';
 import React, { useState } from 'react';
 import isEmpty from 'validator/lib/isEmpty';
-import isEmail from 'validator/lib/isEmail';
+//import isEmail from 'validator/lib/isEmail';
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { FormContext } from '../../../Contexts/formProvider';
-
+import axios from 'axios';
 export default function LogIn() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
+  const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
   const [validationMsg, setValidationMsg] = useState({});
 
   const showState = useContext(FormContext);
-  const { onShow, setShow } = showState;
+  const { onShow, setShow, onsetLogIn } = showState;
 
-  const validateAll = () => {
+  const validateAll =  () => {
     const msg = {};
-    if (isEmpty(email)) {
-      msg.email = 'Please input your Email';
-    } else if (!isEmail(email)) {
-      msg.email = 'Your email is incorrect';
-    }
+    if (isEmpty(userName)) {
+      msg.userName = 'Please input your Ussername';
+    } 
 
     if (isEmpty(password)) {
       msg.password = 'Please input your Password';
@@ -34,12 +32,33 @@ export default function LogIn() {
     return true;
   };
 
-  const onSubmitLogin = () => {
+  const onSubmitLogin = async () => {
     const isValid = validateAll();
     if (isValid) {
       navigate('/');
       setShow(false);
       console.log('Logged in successfully');
+    }
+    try {
+      const response = await axios.post('http://localhost:8081/authen/token', {
+        userName,
+        password
+      }, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      if (response.status === 200) {
+        // Xử lý khi đăng ký thành công
+        console.log('Đăng nhập thành công!');
+        onsetLogIn(true)
+        
+      } else {
+        // Xử lý khi đăng ký thất bại
+        console.error('Đăng nhập thất bại!');
+      }
+    } catch (error) {
+      console.error('Lỗi:', error);
     }
   };
   return (
@@ -55,14 +74,14 @@ export default function LogIn() {
         </p>
         <form action="">
           <div className="logIn_eamil logInBlock">
-            <label htmlFor="email">Email: </label>
+            <label htmlFor="email">UserName: </label>
             <Input
-              label="Email: "
-              placeholder="Nhập email"
+              label="UserName: "
+              placeholder="Nhập userName"
               type="text"
-              value={email}
-              autoComplete="email"
-              onChange={(e) => setEmail(e.target.value)}
+              value={userName}
+              autoComplete="userName"
+              onChange={(e) => setUserName(e.target.value)}
             />
             <p>{validationMsg.email}</p>
           </div>

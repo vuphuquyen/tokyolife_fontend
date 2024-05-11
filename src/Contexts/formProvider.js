@@ -5,6 +5,7 @@ export const FormContext = createContext();
 export default function FormProvider({ children }) {
   const [show, setShow] = useState(false);
   const [showSingUp, setShowSingUp] = useState(false);
+  const [logIn, setLogIn] =useState(true);
 
   const handleShow = () => {
     if (show) {
@@ -20,6 +21,7 @@ export default function FormProvider({ children }) {
       setShowSingUp(true);
     }
   };
+  console.log("Status LogIn",logIn)
   return (
     <FormContext.Provider
       value={{
@@ -29,6 +31,8 @@ export default function FormProvider({ children }) {
         showSingUp: showSingUp,
         setShowSingUp: setShowSingUp,
         onShowSingUp: handleShowSingUp,
+        onLogIn: logIn,
+        onsetLogIn: setLogIn,
       }}
     >
       {children}
