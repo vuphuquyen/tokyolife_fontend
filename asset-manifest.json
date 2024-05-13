@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/tokyolife_fontend/static/css/main.e0383e78.css",
+    "main.js": "/tokyolife_fontend/static/js/main.880562ad.js",
+    "static/js/787.82229500.chunk.js": "/tokyolife_fontend/static/js/787.82229500.chunk.js",
+    "static/media/news.gif": "/tokyolife_fontend/static/media/news.789bddb23d3955e5a774.gif",
+    "static/media/logo6.webp": "/tokyolife_fontend/static/media/logo6.35a6c5fc05cc6a142994.webp",
+    "static/media/logo1.webp": "/tokyolife_fontend/static/media/logo1.d6a4b49188e76eabade6.webp",
+    "static/media/logo4.webp": "/tokyolife_fontend/static/media/logo4.31a33b30b161d52e5a16.webp",
+    "static/media/logo3.webp": "/tokyolife_fontend/static/media/logo3.71001e0dad98ea0da1f6.webp",
+    "static/media/logo5.webp": "/tokyolife_fontend/static/media/logo5.8f5222cc3323a6fe94ff.webp",
+    "static/media/logo2.webp": "/tokyolife_fontend/static/media/logo2.d6019fb9d2e6384579a4.webp",
+    "static/media/long_cuu.webp": "/tokyolife_fontend/static/media/long_cuu.cab0594765511fe644ff.webp",
+    "static/media/aodunhiet.webp": "/tokyolife_fontend/static/media/aodunhiet.e164676ab3c937f9b936.webp",
+    "static/media/hot.webp": "/tokyolife_fontend/static/media/hot.dfefa99547bcfe98e6b4.webp",
+    "static/media/phao.webp": "/tokyolife_fontend/static/media/phao.dbcdd7474ff82ddce1ff.webp",
+    "static/media/polo.webp": "/tokyolife_fontend/static/media/polo.dbcdd7474ff82ddce1ff.webp",
+    "static/media/deal399.webp": "/tokyolife_fontend/static/media/deal399.c1e99b9035e5305e2524.webp",
+    "static/media/he.webp": "/tokyolife_fontend/static/media/he.a969156eeabaa652993c.webp",
+    "static/media/deal57.webp": "/tokyolife_fontend/static/media/deal57.418984d5aae170d10d9a.webp",
+    "static/media/nuochoa.webp": "/tokyolife_fontend/static/media/nuochoa.010d071b9f81293fdcf6.webp",
+    "static/media/deal249.webp": "/tokyolife_fontend/static/media/deal249.0f85e3cbbc2c93848b64.webp",
+    "static/media/tay_rua.webp": "/tokyolife_fontend/static/media/tay_rua.815f725352176764aae8.webp",
+    "static/media/balo.webp": "/tokyolife_fontend/static/media/balo.85dcf5ff99cc2be5b954.webp",
+    "static/media/deal111.webp": "/tokyolife_fontend/static/media/deal111.35219f2c26ee28bb56b7.webp",
+    "static/media/nam.webp": "/tokyolife_fontend/static/media/nam.ed7f1514c85c40eb12ca.webp",
+    "static/media/nu.webp": "/tokyolife_fontend/static/media/nu.02cd91972b0805e1e0a9.webp",
+    "index.html": "/tokyolife_fontend/index.html",
+    "static/media/sale.svg": "/tokyolife_fontend/static/media/sale.0c14f79f40a157807548cb1a28599474.svg",
+    "main.e0383e78.css.map": "/tokyolife_fontend/static/css/main.e0383e78.css.map",
+    "main.880562ad.js.map": "/tokyolife_fontend/static/js/main.880562ad.js.map",
+    "787.82229500.chunk.js.map": "/tokyolife_fontend/static/js/787.82229500.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0383e78.css",
+    "static/js/main.880562ad.js"
+  ]
+}
